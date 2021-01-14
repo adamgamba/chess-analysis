@@ -196,15 +196,13 @@ import os, glob, time
 time_start = time.time()
 gameplay = ""
 count_completed = 1
-#path = "C:\\Users\\Adam\\KingBase2019-pgn\\" #Home
-#path = 'C:\\Users\\agamba\\KingBase2019-pgn\\' #School
-path = 'C:\\Users\\adamg\\OneDrive\\Documents\\Adam 12\\Computer Science\\Final Project\\KingBaseShort' #Short
-os.chdir(path)
+
+#path = '.\' #GitHub
+#os.chdir(path)
 
 # Creates a list of all files with the .pgn extension
 # Portable Game Notation, file type of the dataset
-filenames = glob.glob("*.pgn")
-#filenames = ["KingBaseShort.txt"]
+filenames = glob.glob("*.txt")
 
 for file in filenames:
     with open(path + file) as f:
